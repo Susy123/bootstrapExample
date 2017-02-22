@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>个人简历</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		body{padding-top: 70px;}
+	</style>
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+	<script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body class="container">
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="navbar-brand">个人简历</div>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#divNav">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="divNav" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<button type="button" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal" title="打印">打印</button>
+							<button type="button" class="btn btn-info navbar-btn" data-toggle="tooltip" data-placement="bottom" title="下载">下载</button>
+							<script type="text/javascript">
+								$(function(){
+									$('[data-toggle="tooltip"]').tooltip();
+								});
+							</script>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- 正文 -->
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="panel panel-default">
+				<div class="panel-heading">个人信息</div>
+				<div class="panel-body">
+					<img src="images/im.png" class="img-responsive img-rounded img-thumbnail" alt="me">	
+					<p class="text-center text-primary">三川</p>	
+					<address>
+						<strong>Envision, Inc.</strong>
+						<br/>
+						<span class="glyphicon glyphicon-home" title="Address"> <code>南京市中山南路1号</code></span><br>
+						<span class="glyphicon glyphicon-file" title="PostalCode"> <kbd>210000</kbd></span><br>
+						<span class="glyphicon glyphicon-phone" title="Mobile"> 15850553197</span><br>
+						<span class="glyphicon glyphicon-envelope" title="Email"> xxx@envisioncn.com</span>
+					</address>			
+				</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">所会技能</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-3">
+							<span class="text-muted">HTML5</span>
+						</div>
+						<div class="col-sm-9">
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped active" style="width:85%"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-3">
+							<span class="text-success">JS</span>
+						</div>
+						<div class="col-sm-9">
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped progress-bar-success active" style="width:90%"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-3">
+							<span class="text-info">CSS</span>
+						</div>
+						<div class="col-sm-9">
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped progress-bar-info active" style="width:75%"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-3">
+							<span class="text-warning">Java</span>
+						</div>
+						<div class="col-sm-9">
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped progress-bar-warning active" style="width:80%"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-primary">
+				<div class="panel-heading">联系我们</div>
+				<div class="panel-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="email" class="col-sm-3 control-label">邮箱</label>
+							<div class="col-sm-9">
+								<input type="email" id="email" class="form-control" placeholder="xxx@xxx.com"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="name" class="col-sm-3 control-label">姓名</label>
+							<div class="col-sm-9">
+								<input type="text" id="name" class="form-control"  placeholder="姓名"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-3 col-sm-9">
+								<button type="submit" class="btn btn-primary pull-right">发送</button>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-9">
+			<div class="jumbotron">
+				<p class="text-right small">参与10个以上的企业项目，项目详情详见<a href="#">网站</a><br>
+					参与<code>10个以上</code>的企业项目<br>
+					参与10个以上的企业项目<br>
+					参与10个以上的企业项目<br>
+				</p>
+
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#collapseOne" data-toggle="collapse" data-parent="#accordion">工作经验</a>
+						</div>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse">
+						<div class="panel-body">
+							<ul class="list-group">
+								<li class="list-group-item list-group-item-success">
+									<div class="row">
+										<div class="col-sm-4">2014/04 - 至今</div>
+										<div class="col-sm-4">远景能源</div>
+										<div class="col-sm-4">软件工程师</div>
+									</div>
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<div class="row">
+										<div class="col-sm-4">2011/04 - 2012</div>
+										<div class="col-sm-4">xxx</div>
+										<div class="col-sm-4">软件工程师</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion">教育经历</a>
+						</div>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							<ul class="list-group">
+								<li class="list-group-item list-group-item-success">
+									<div class="row">
+										<div class="col-sm-4">2014/04 - 至今</div>
+										<div class="col-sm-4">xx学校</div>
+										<div class="col-sm-4">软件工程</div>
+									</div>
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<div class="row">
+										<div class="col-sm-4">2011/04 - 2012</div>
+										<div class="col-sm-4">xxx学校</div>
+										<div class="col-sm-4">软件工程</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#collapseThree" data-toggle="collapse" data-parent="#accordion">项目展示</a>
+						</div>						
+					</div>
+					<!-- .collapse.in  表示显示内容 -->
+					<div id="collapseThree" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<div id="divProject" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#divProject" data-slide-to="0" class="active"></li>
+									<li data-target="#divProject" data-slide-to="1"></li>
+									<li data-target="#divProject" data-slide-to="2"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="item active">
+										<img src="images/a.png" alt="..." class="img-responsive img-rounded">
+										<div class="carousel-caption">项目1</div>
+									</div>
+									<div class="item">
+										<img src="images/b.png" alt="..." class="img-responsive img-rounded">
+										<div class="carousel-caption">项目2</div>
+									</div>
+									<div class="item">
+										<img src="images/c.png" alt="..." class="img-responsive img-rounded">
+										<div class="carousel-caption">项目3</div>
+									</div>
+								</div>
+								<a class="left carousel-control" href="#divProject" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+								</a>
+								<a class="right carousel-control" href="#divProject" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 模态框（Modal）(ps:modal尽量防止在body子层，以免其他外层设置z-index后造成modal也被遮罩层遮蔽) -->
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						&times;
+					</button>
+					<h4 class="modal-title">
+						打印简历
+					</h4>
+				</div>
+				<div class="modal-body">
+					打印预览
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+					</button>
+					<button type="button" class="btn btn-primary">
+						打印
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
+	<footer>
+		<nav class="navbar-default navbar-fixed-bottom text-center">
+			All images and contents &copy; xiaohui
+		</nav>
+	</footer>
+</body>
+</html>
